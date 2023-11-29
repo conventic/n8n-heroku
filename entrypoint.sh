@@ -16,7 +16,7 @@ N8N_DB_HOST="$(echo $N8N_DB_HOSTPORT | sed -e 's,:.*,,g')"
 N8N_DB_PORT="$(echo $N8N_DB_HOSTPORT | sed -e 's,^.*:,:,g' -e 's,.*:\([0-9]*\).*,\1,g' -e 's,[^0-9],,g')"
 
 export DB_TYPE=postgresdb
-export DB_POSTGRESDB_HOST=$N8N_DB_HOST
+export DB_POSTGRESDB_HOST=$N8N_DB_HOST?sslmode=require
 export DB_POSTGRESDB_PORT=$N8N_DB_PORT
 export DB_POSTGRESDB_DATABASE=$N8N_DB_DATABASE
 export DB_POSTGRESDB_USER=$N8N_DB_USER

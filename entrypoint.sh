@@ -23,12 +23,5 @@ export DB_POSTGRESDB_USER=$N8N_DB_USER
 export DB_POSTGRESDB_PASSWORD=$N8N_DB_PASSWORD
 export DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED=false
 
-# node env variables
-export NODE_FUNCTION_ALLOW_BUILTIN=*
-export NODE_FUNCTION_ALLOW_EXTERNAL=moment,lodash,llm-document-ocr
-
-#timezone
-export GENERIC_TIMEZONE=Europe/Berlin
-
 # kickstart nodemation
 n8n

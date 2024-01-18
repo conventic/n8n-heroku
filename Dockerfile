@@ -2,7 +2,7 @@ FROM n8nio/n8n:ai-beta
 
 USER root
 
-RUN apk add ghostscript && npm i -g mupdf-js
+RUN apk add ghostscript 
 
 WORKDIR /home/node/packages/cli
 ENTRYPOINT []
